@@ -44,7 +44,7 @@ export default function Home() {
               </svg>
               <span className="text-xl font-semibold">Sell More Promise</span>
             </div>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-foreground">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight mb-2 text-foreground">
               Sell more {" "}
               <EditableProduct
                 value={product}
