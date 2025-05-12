@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Head from "next/head";
 import Image from "next/image";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
 const EXAMPLES = [
   "anything"
@@ -42,7 +43,7 @@ export default function Home() {
               >
                 <circle cx="22" cy="22" r="22" fill="black" />
               </svg>
-              <span className="text-xl font-semibold">Sell More Promise</span>
+              <span className="text-xl font-semibold">The Sell More Promise</span>
             </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight mb-2 text-foreground">
               Sell more {" "}
@@ -67,7 +68,7 @@ export default function Home() {
                 className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
-                <a href="#get-started" aria-label="Get started">Get started</a>
+                <a href="#get-started" aria-label="Start Selling More">Start Selling More</a>
               </Button>
             </div>
           </header>
@@ -90,9 +91,23 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="flex flex-col gap-6" aria-labelledby="who-heading">
+            <h2 id="who-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">
+              We find who is looking for you.
+            </h2>
+            <ul className="list-disc list-inside pl-6">
+              <li className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-muted-foreground mb-2">
+                Demographics: Age, location, income, and interests.
+              </li>
+              <li className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-muted-foreground">
+                Behaviors: Shopping habits, social media usage, and buying triggers.
+              </li>
+            </ul>
+          </section>
+
           <section className="flex flex-col gap-6" aria-labelledby="designs-heading">
             <h2 id="designs-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">
-              We design what gets their attention.
+              To design what gets their attention.
             </h2>
             <ul className="list-disc list-inside pl-6">
               <li className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-muted-foreground mb-2">
@@ -151,77 +166,70 @@ export default function Home() {
                 className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
-                <a href="#get-started" aria-label="Get started">Get started</a>
+                <a href="#get-started" aria-label="Start Selling More">Start Selling More</a>
               </Button>
             </div>
           </section>
 
           <section className="flex flex-col gap-6" aria-labelledby="questions-heading">
             <h2 id="questions-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">Questions? We got you.</h2>
-            <div className="flex flex-col gap-8">
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don&apos;t make $5000 more?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">We&apos;ll halve our fee for you that month. We share the risk—if you don&apos;t win, we don&apos;t win.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What do I get for $5000?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Everything you need to get attention and sell more: custom branding, a website (if you need one), and unlimited design assets—posters, banners, reels, posts, stories, and more—delivered every month, tailored to your business and audience.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">I don&apos;t have a brand or website yet. Can I still sign up?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Absolutely. Branding and website are included in the package. We&apos;ll help you build a strong foundation from scratch.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How fast do I get my designs?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Most requests are delivered within 3-5 business days. We work fast so you can move fast.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">Can I cancel anytime?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Yes, you can cancel at any time. There are no long-term contracts or hidden fees.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don&apos;t like the designs?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">We offer unlimited revisions until you&apos;re happy. Your satisfaction is our priority.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">Can I request revisions?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Yes! We&apos;ll keep working with you until the designs are just right.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How do I communicate my needs?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">You&apos;ll have a dedicated point of contact and can communicate via email, chat, or scheduled calls—whatever works best for you.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What industries do you work with?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">We work with all industries—from retail and food to tech, services, and more. If you sell, we can help you sell more.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How do I get started?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Just book a call or click &quot;Get started.&quot; We&apos;ll discuss your needs, answer any questions, and get you set up right away.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">Is everything really unlimited?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Yes—unlimited requests and revisions, delivered one at a time, as fast as possible. We want you to get the most value every month.</p>
-              </article>
-              <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I already have a brand or website?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Great! We&apos;ll work with your existing assets or help you refresh them as needed.</p>
-              </article>
-            </div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">What if I don&apos;t make $5000 more?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  We&apos;ll halve our fee for you that month. We share the risk—if you don&apos;t win, we don&apos;t win.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">What do I get for $5000?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  Everything you need to get attention and sell more: custom branding, a website, and unlimited design assets—posters, banners, reels, posts, stories, and more—delivered every month, tailored to your business and audience.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">I don&apos;t have a brand or website yet. Can I still sign up?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  Absolutely. Branding and website are included in the package. We&apos;ll help you build a strong foundation from scratch.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">How fast do I get my designs?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  Most requests are delivered within 3-5 business days. We work fast so you can move fast.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">Can I cancel anytime?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  Yes, you can cancel at any time. There are no long-term contracts or hidden fees.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6">
+                <AccordionTrigger className="text-2xl sm:text-3xl font-semibold text-foreground">What if I don&apos;t like the designs?</AccordionTrigger>
+                <AccordionContent className="text-xl sm:text-2xl text-muted-foreground">
+                  We offer unlimited revisions until you&apos;re happy. Your satisfaction is our priority.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </section>
           <section className="flex flex-col gap-6" aria-labelledby="team-heading">
             <h2 id="team-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-foreground">
-              Small team, big results.
+              Local presence, global excellence.
             </h2>
             <p className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-muted-foreground">
-              We&apos;re a small team of two, but we&apos;re dedicated to helping you grow.
+              Two local teams backed by our global talent, all dedicated to your growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 mt-8">
               <div className="flex flex-col gap-2">
                 <Avatar className="w-32 h-32 border-2 border-secondary">
                   <AvatarFallback className="bg-secondary text-secondary-foreground text-2xl font-bold">MA</AvatarFallback>
                 </Avatar>
-                <span className="text-2xl font-semibold text-foreground mt-2">Maged Abdeslalam</span>
+                <span className="text-2xl font-semibold text-foreground mt-2">Maged Abdelsalam</span>
                 <span className="text-2xl text-muted-foreground">Brand and product design.</span>
               </div>
               <div className="flex flex-col gap-2">
@@ -235,7 +243,7 @@ export default function Home() {
           </section>
           <footer className="flex flex-col gap-6" aria-labelledby="copyright-heading">
             <h2 id="copyright-heading" className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-2 text-foreground">
-              Still not there? Let&apos;s talk.
+              Still haven&apos;t decided? Let&apos;s talk.
             </h2>
             <div className="flex flex-row gap-4 w-full">
               <Button
@@ -246,7 +254,7 @@ export default function Home() {
                 <a href="#book-call" aria-label={`Book a no-obligation call to discuss selling more ${product}`}>Book a call</a>
               </Button>
             </div>
-            <span className="text-xl text-muted-foreground">© Sell More Promise.</span>
+            <span className="text-xl text-muted-foreground">© The Sell More Promise.</span>
           </footer>
         </div>
       </main>
