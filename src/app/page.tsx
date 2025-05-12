@@ -64,9 +64,9 @@ export default function Home() {
 
           <section className="flex flex-col gap-6" aria-labelledby="work-gallery-heading">
             <h2 id="work-gallery-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-foreground">
-              Customers we've helped sell more.
+              Customers we&apos;ve helped sell more.
             </h2>
-            <p className="text-xl sm:text-2xl text-muted-foreground">We helped <a href="https://caphillkitchens.com/s/halal-smash-brgr/1525-13th-ave-seattle/2085b5c6-53f5-413d-9773-48f07cdcce2d" target="_blank" rel="noopener noreferrer" className="underline text-primary">Halal Smash Brgrs</a> sell <span className="font-bold text-primary">2500+</span> more smashed burgers. <br />That's over <span className="font-bold text-primary">$30,000</span> in additional monthly revenue.</p>
+            <p className="text-xl sm:text-2xl text-muted-foreground">We helped <a href="https://caphillkitchens.com/s/halal-smash-brgr/1525-13th-ave-seattle/2085b5c6-53f5-413d-9773-48f07cdcce2d" target="_blank" rel="noopener noreferrer" className="underline text-primary">Halal Smash Brgrs</a> sell <span className="font-bold text-primary">2500+</span> more smashed burgers. <br />That&apos;s over <span className="font-bold text-primary">$30,000</span> in additional monthly revenue.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
               <Image src="/001.png" alt="Branding and packaging for Sweet Treats Bakery" className="w-full h-auto rounded-xs shadow" width={600} height={800} priority />
               <Image src="/002.png" alt="Fitness campaign poster for Urban Fitness" className="w-full h-auto rounded-xs shadow" width={600} height={800} />
@@ -119,7 +119,7 @@ export default function Home() {
 
           <section className="flex flex-col gap-6" aria-labelledby="pricing-heading">
             <h2 id="pricing-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">
-              $5000/month. If you don't make at least that much more from our work, we'll halve our fee. Yes, really.
+              $5000/month. If you don&apos;t make at least that much more from our work, we&apos;ll halve our fee. Yes, really.
             </h2>
           </section>
 
@@ -150,16 +150,16 @@ export default function Home() {
             <h2 id="questions-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">Still got questions?</h2>
             <div className="flex flex-col gap-8">
               <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don't make $5000 more?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">We'll halve our fee for you that month. We share the risk—if you don't win, we don't win.</p>
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don&apos;t make $5000 more?</h3>
+                <p className="text-xl sm:text-2xl text-muted-foreground">We&apos;ll halve our fee for you that month. We share the risk—if you don&apos;t win, we don&apos;t win.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What do I get for $5000?</h3>
                 <p className="text-xl sm:text-2xl text-muted-foreground">Everything you need to get attention and sell more: custom branding, a website (if you need one), and unlimited design assets—posters, banners, reels, posts, stories, and more—delivered every month, tailored to your business and audience.</p>
               </article>
               <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">I don't have a brand or website yet. Can I still sign up?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Absolutely. Branding and website are included in the package. We'll help you build a strong foundation from scratch.</p>
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">I don&apos;t have a brand or website yet. Can I still sign up?</h3>
+                <p className="text-xl sm:text-2xl text-muted-foreground">Absolutely. Branding and website are included in the package. We&apos;ll help you build a strong foundation from scratch.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How fast do I get my designs?</h3>
@@ -170,16 +170,16 @@ export default function Home() {
                 <p className="text-xl sm:text-2xl text-muted-foreground">Yes, you can cancel at any time. There are no long-term contracts or hidden fees.</p>
               </article>
               <article>
-                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don't like the designs?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">We offer unlimited revisions until you're happy. Your satisfaction is our priority.</p>
+                <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don&apos;t like the designs?</h3>
+                <p className="text-xl sm:text-2xl text-muted-foreground">We offer unlimited revisions until you&apos;re happy. Your satisfaction is our priority.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">Can I request revisions?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Yes! We'll keep working with you until the designs are just right.</p>
+                <p className="text-xl sm:text-2xl text-muted-foreground">Yes! We&apos;ll keep working with you until the designs are just right.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How do I communicate my needs?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">You'll have a dedicated point of contact and can communicate via email, chat, or scheduled calls—whatever works best for you.</p>
+                <p className="text-xl sm:text-2xl text-muted-foreground">You&apos;ll have a dedicated point of contact and can communicate via email, chat, or scheduled calls—whatever works best for you.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What industries do you work with?</h3>
@@ -187,7 +187,7 @@ export default function Home() {
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">How do I get started?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Just book a call or click "Get started." We'll discuss your needs, answer any questions, and get you set up right away.</p>
+                <p className="text-xl sm:text-2xl text-muted-foreground">Just book a call or click &quot;Get started.&quot; We&apos;ll discuss your needs, answer any questions, and get you set up right away.</p>
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">Is everything really unlimited?</h3>
@@ -195,7 +195,7 @@ export default function Home() {
               </article>
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I already have a brand or website?</h3>
-                <p className="text-xl sm:text-2xl text-muted-foreground">Great! We'll work with your existing assets or help you refresh them as needed.</p>
+                <p className="text-xl sm:text-2xl text-muted-foreground">Great! We&apos;ll work with your existing assets or help you refresh them as needed.</p>
               </article>
             </div>
           </section>
@@ -204,7 +204,7 @@ export default function Home() {
               Small team, big results.
             </h2>
             <p className="text-2xl sm:text-3xl md:text-4xl font-normal tracking-tight text-muted-foreground">
-              We're a small team of two, but we're dedicated to helping you grow.
+              We&apos;re a small team of two, but we&apos;re dedicated to helping you grow.
             </p>
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 mt-8">
               <div className="flex flex-col gap-2">
@@ -225,7 +225,7 @@ export default function Home() {
           </section>
           <footer className="flex flex-col gap-6" aria-labelledby="copyright-heading">
             <h2 id="copyright-heading" className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-2 text-foreground">
-              Still worried? Let's talk.
+              Still worried? Let&apos;s talk.
             </h2>
             <div className="flex flex-row gap-4 w-full">
               <Button
