@@ -34,6 +34,16 @@ export default function Home() {
       <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground px-6 sm:px-12 py-12 sm:py-24 font-sans">
         <div className="max-w-6xl w-full flex flex-col gap-20 text-left">
           <header className="flex flex-col gap-6" role="banner">
+            <div className="flex items-center gap-4 mb-4">
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+              >
+                <circle cx="22" cy="22" r="22" fill="black" />
+              </svg>
+              <span className="text-xl font-semibold">Sell More Promise</span>
+            </div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-foreground">
               Sell more {" "}
               <EditableProduct
@@ -147,7 +157,7 @@ export default function Home() {
           </section>
 
           <section className="flex flex-col gap-6" aria-labelledby="questions-heading">
-            <h2 id="questions-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">Still got questions?</h2>
+            <h2 id="questions-heading" className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-2 text-foreground">Questions? We got you.</h2>
             <div className="flex flex-col gap-8">
               <article>
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-foreground">What if I don&apos;t make $5000 more?</h3>
@@ -208,14 +218,14 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-8 sm:gap-12 mt-8">
               <div className="flex flex-col gap-2">
-                <Avatar className="w-40 h-40 border-2 border-secondary">
+                <Avatar className="w-32 h-32 border-2 border-secondary">
                   <AvatarFallback className="bg-secondary text-secondary-foreground text-2xl font-bold">MA</AvatarFallback>
                 </Avatar>
                 <span className="text-2xl font-semibold text-foreground mt-2">Maged Abdeslalam</span>
                 <span className="text-2xl text-muted-foreground">Brand and product design.</span>
               </div>
               <div className="flex flex-col gap-2">
-                <Avatar className="w-40 h-40 border-2 border-secondary">
+                <Avatar className="w-32 h-32 border-2 border-secondary">
                   <AvatarFallback className="bg-secondary text-secondary-foreground text-2xl font-bold">YO</AvatarFallback>
                 </Avatar>
                 <span className="text-2xl font-semibold text-foreground mt-2">Yasmin Ouf</span>
@@ -225,7 +235,7 @@ export default function Home() {
           </section>
           <footer className="flex flex-col gap-6" aria-labelledby="copyright-heading">
             <h2 id="copyright-heading" className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-2 text-foreground">
-              Still worried? Let&apos;s talk.
+              Still not there? Let&apos;s talk.
             </h2>
             <div className="flex flex-row gap-4 w-full">
               <Button
