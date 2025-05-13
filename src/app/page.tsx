@@ -57,7 +57,7 @@ export default function Home() {
             <div className="flex flex-row gap-4 w-full">
               <Button
                 size="lg"
-                className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
+                className="flex-1 h-16 text-md sm:text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
                 <a href="#book-call" aria-label={`Book a call to sell more ${product}`}>Book a call</a>
@@ -65,7 +65,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
+                className="flex-1 h-16 text-md sm:text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
                 <a href="#get-started" aria-label="Start Selling More">Start Selling More</a>
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="flex flex-row gap-4 w-full">
               <Button
                 size="lg"
-                className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
+                className="flex-1 h-16 text-md sm:text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
                 <a href="#book-call" aria-label={`Book a call to sell more ${product}`}>Book a call</a>
@@ -163,7 +163,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
+                className="flex-1 h-16 text-md sm:text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
                 <a href="#get-started" aria-label="Start Selling More">Start Selling More</a>
@@ -248,7 +248,7 @@ export default function Home() {
             <div className="flex flex-row gap-4 w-full">
               <Button
                 size="lg"
-                className="flex-1 h-16 text-xl rounded-2xl flex items-center justify-center"
+                className="flex-1 h-16 text-md sm:text-xl rounded-2xl flex items-center justify-center"
                 asChild
               >
                 <a href="#book-call" aria-label={`Book a no-obligation call to discuss selling more ${product}`}>Book a call</a>
